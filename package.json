@@ -13,8 +13,13 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@config-plugins/react-native-webrtc": "^8.0.0",
     "@expo/vector-icons": "^14.0.0",
+    "@notifee/react-native": "^7.8.2",
+    "@react-native-community/netinfo": "^11.3.1",
     "@react-navigation/native": "^6.0.2",
+    "@stream-io/react-native-webrtc": "^118.0.1",
+    "@stream-io/video-react-native-sdk": "^0.6.13",
     "expo": "~50.0.14",
     "expo-dev-client": "^3.3.11",
     "expo-font": "~11.10.3",
@@ -27,8 +32,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.6",
+    "react-native-incall-manager": "^4.2.0",
     "react-native-safe-area-context": "4.8.2",
     "react-native-screens": "~3.29.0",
+    "react-native-svg": "^15.2.0",
     "react-native-web": "~0.19.6"
   },
   "devDependencies": {

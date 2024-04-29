@@ -6,6 +6,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 
 import { useColorScheme } from '../components/useColorScheme';
+import { PermissionsAndroid, Platform } from 'react-native';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -36,6 +37,18 @@ export default function RootLayout() {
       SplashScreen.hideAsync();
     }
   }, [loaded]);
+
+  useEffect(() => {
+    const run = async () => {
+      if (Platform.OS === 'android') {
+        await PermissionsAndroid.requestMultiple([
+          'android.permission.POST_NOTIFICATIONS',
+          'android.permission.BLUETOOTH_CONNECT',
+        ]);
+      }
+    };
+    run();
+  }, []);
 
   if (!loaded) {
     return null;
