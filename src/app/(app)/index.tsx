@@ -9,6 +9,7 @@ import {
 import { Stack, router } from 'expo-router';
 import { useStreamVideoClient } from '@stream-io/video-react-native-sdk';
 import { genRandomString } from '../../utils';
+import { supabase } from '@/src/lib/supabase';
 
 const HomeScreen = () => {
 
@@ -47,7 +48,7 @@ const HomeScreen = () => {
                 </Pressable>
             </View>
 
-            <Button title="Sign out" onPress={() => { }} />
+            <Button title="Sign out" onPress={() => {supabase.auth.signOut()}}/>
         </View>
     )
 };

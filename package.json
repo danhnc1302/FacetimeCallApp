@@ -10,24 +10,18 @@
     "test": "jest --watchAll"
   },
   "jest": {
-    "preset": "jest-expo",
-    "setupFiles": [
-      "./jestSetupFile.js"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)|@react-native-async-storage/async-storage"
-    ]
+    "preset": "jest-expo"
   },
   "dependencies": {
     "@config-plugins/react-native-webrtc": "^8.0.0",
     "@expo/vector-icons": "^14.0.0",
     "@notifee/react-native": "^7.8.2",
-    "@react-native-async-storage/async-storage": "^1.23.1",
+    "@react-native-async-storage/async-storage": "^1.21.0",
     "@react-native-community/netinfo": "^11.3.1",
     "@react-navigation/native": "^6.0.2",
     "@stream-io/react-native-webrtc": "^118.0.1",
     "@stream-io/video-react-native-sdk": "^0.6.13",
-    "@supabase/supabase-js": "^2.42.7",
+    "@supabase/supabase-js": "^2.38.2",
     "expo": "~50.0.14",
     "expo-dev-client": "^3.3.11",
     "expo-font": "~11.10.3",
@@ -46,7 +40,8 @@
     "react-native-screens": "~3.29.0",
     "react-native-svg": "^15.2.0",
     "react-native-url-polyfill": "^2.0.0",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "supabase": "^1.164.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

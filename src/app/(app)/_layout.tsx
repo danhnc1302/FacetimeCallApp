@@ -9,6 +9,7 @@ const AppLayout = () => {
     return <ActivityIndicator style={{ marginTop: 100 }} />;
   }
 
+  console.log("session: ", session)
   if (!session) {
     return <Redirect href={'/auth'} />;
   }
