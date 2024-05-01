@@ -1,10 +1,10 @@
 import { StreamChat } from 'stream-chat';
 import { createClient } from '@supabase/supabase-js';
 
-const SUPABASE_URL = process.env.SUPABASE_URL ?? 'https://wmaslehxmzwklcgyozro.supabase.co';
-const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY ?? 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndtYXNsZWh4bXp3a2xjZ3lvenJvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTQ0MTEzNTAsImV4cCI6MjAyOTk4NzM1MH0.iY6QNB3QjLWNVhKmhbhBCn-EcQlXZI7akB_jAKzCqaA';
-const STREAM_API_KEY = process.env.STREAM_API_KEY ?? '68yr8cv2k5b6';
-const STREAM_API_SECRET = process.env.STREAM_API_SECRET ?? 'autypwyh7kn6w5u65zkedbvgdr2k7s63mva93wg6zfevjxmnurgkfwb629adeguh';
+const SUPABASE_URL = process.env.SUPABASE_URL ?? '';
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY ?? '';
+const STREAM_API_KEY = process.env.STREAM_API_KEY ?? '';
+const STREAM_API_SECRET = process.env.STREAM_API_SECRET ?? '';
 
 // Initialize a Server Client
 const serverClient = StreamChat.getInstance(STREAM_API_KEY, STREAM_API_SECRET);

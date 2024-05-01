@@ -33,7 +33,6 @@ export default function ModalScreen() {
         return <Text>Call not found!</Text>;
     }
 
-
     return (
         <View style={styles.container}>
             <StreamCall call={call}>
